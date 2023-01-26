@@ -50,6 +50,9 @@ import ProcessTrail from './process-trail.svg';
 
 import Pontos from './pontos.svg';
 
+import PostImg1 from './post-img-1.png';
+import PostImg2 from './post-img-2.png';
+
 export { Logo, 
     LogoHorizontal, 
     RoundLogo, 
@@ -89,5 +92,7 @@ export { Logo,
     Categoria2D,
     Pontos,
     ImagePublicacoes,
-    ProcessTrail
+    ProcessTrail,
+    PostImg1,
+    PostImg2,
 };

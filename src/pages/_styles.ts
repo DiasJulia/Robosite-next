@@ -24,6 +24,7 @@ export const FirstSection = styled.section`
 
     div{
         max-width: 512px;
+        margin-right: 15px;
     }
 
     h1{
@@ -42,13 +43,44 @@ export const FirstSection = styled.section`
         text-align: justify;
         color: #606060;
     }
+
+    @media(max-width: 880px){
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        div{
+            max-width: none;
+        }
+    }
+
+    @media(max-width: 960px){
+        div{
+            margin-top: 75px;
+        }
+    }
+
+
+    @media(min-width: 960px) and (max-width: 1200px){
+        div{
+            max-width: 628px;
+            margin-top: 45px;
+        }
+    }
+
 `;
 
 export const RobotImg = styled.img`
     margin-right: calc(-24px - 2rem);
 `
 
-export const RoundLogoImg = styled.img``
+export const RoundLogoImg = styled.img`
+    @media(max-width: 1200px){
+        position: absolute;
+        width: 90px;
+        top: 115px;
+    }
+`
 
 export const ThirdSection = styled.section`
     text-align: center;
@@ -86,6 +118,11 @@ export const Row = styled.div<RowProps>`
     flex-direction: row;
     justify-content: ${(props) => props.justifyContent || 'space-between'};
     width: 100%;
+
+    @media(max-width: 1200px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 export const Div = styled.div<DivProps>`
