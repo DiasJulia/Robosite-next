@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 type RowProps = {
@@ -52,7 +53,7 @@ export const Row = styled.div<RowProps>`
   width: 100%;
 `;
 
-export const BadgeContainer = styled.div`
+export const BadgeContainer = styled.a`
   margin-top: -70px;
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Container, Nav, LogoImg } from './styles';
+import { Container, Nav, LogoImg, MenuChecker, MenuButton, Line, CloseButton } from './styles';
 
 import { Logo } from '@/assets';
 import Link from 'next/link';
@@ -14,6 +14,12 @@ const Navbar: React.FC = () => {
     return (
     <Container>
         <LogoImg src={Logo.src} alt="Logo do Robocin" />
+        <MenuChecker id="menu" name="menu" type='checkbox'/>
+        <MenuButton htmlFor="menu">
+            <Line></Line>
+            <Line></Line>
+            <Line></Line>
+        </MenuButton>
         <Nav>
             <ul>
                 <li className={page.includes("home")? 'active': ''} onClick={()=>setPage("home")}>

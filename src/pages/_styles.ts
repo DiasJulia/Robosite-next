@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Background1, Background2 } from '@/assets';
+import Image from 'next/image';
 
 type DivProps = {
     width?: string;
@@ -51,12 +52,14 @@ export const FirstSection = styled.section`
 
         div{
             max-width: none;
+            margin-right: 0;
         }
     }
 
     @media(max-width: 960px){
         div{
             margin-top: 75px;
+            
         }
     }
 
@@ -72,6 +75,10 @@ export const FirstSection = styled.section`
 
 export const RobotImg = styled.img`
     margin-right: calc(-24px - 2rem);
+    @media(max-width: 880px){
+        margin-right:auto;
+        margin-left: auto;
+    }
 `
 
 export const RoundLogoImg = styled.img`
@@ -154,7 +161,7 @@ export const FourthSection = styled.section`
     }
 `
 
-export const RobotImg2 = styled.img`
+export const RobotImg2 = styled(Image)`
     margin-left: 2rem;
     width: 45%;
 

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {Arrow3, Categoria2D, CategoriaSSL, CategoriaVSS, Pontos} from '../../assets'
 import {Footer, Header} from '../../components'
 import {Badge, BadgeContainer, CategoriaContainer, CategoriaImg, Container, CrossedText, Details, FirstSection, Line, Row, SubContainer, TableLine} from './styles'
@@ -8,26 +9,20 @@ const CategoriasPage = () => {
     <Container>
         <Header title="CATEGORIAS" subtitle="Nossas sub-equipes cooperam para administrar, desenvolver e competir em várias categorias diferentes, como SSL, VSSS, Simulação 2D e Drone."/>
         <Row justifyContent='center'>
-            <a href="#SSL">
-            <BadgeContainer>
-                <img src={Pontos.src} alt="" />
+            <BadgeContainer href="#SSL">
+                <Image src={Pontos} alt="" />
                 <Badge>Small size league</Badge>
             </BadgeContainer>
-            </a>
-            <a href="#VSSS">
-            <BadgeContainer>
-                <img src={Pontos.src} alt="" />
+            <BadgeContainer href="#VSSS">
+                <Image src={Pontos} alt="" />
                 <Badge>very Small size league</Badge>
             </BadgeContainer>
-            </a>
-            <a href="#2D">
-            <BadgeContainer>
-                <img src={Pontos.src} alt="" />
+            <BadgeContainer href="#2D">
+                <Image src={Pontos} alt="" />
                 <Badge>Simulação 2d</Badge>
             </BadgeContainer>
-            </a>
-            <BadgeContainer>
-                <img src={Pontos.src} alt="" />
+            <BadgeContainer href="#">
+                <Image src={Pontos} alt="" />
                 <Badge>drone</Badge>
             </BadgeContainer>
         </Row>
@@ -37,7 +32,7 @@ const CategoriasPage = () => {
         <br />
             <Row>
                 <CategoriaContainer>
-                    <img src={Arrow3.src} alt="Seta" /> <h2>Small Size League</h2> <h3>RoboCup | LARC</h3>
+                    <Image src={Arrow3} alt="Seta" /> <h2>Small Size League</h2> <h3>RoboCup | LARC</h3>
                     <p>Small Size League (SSL) é uma competição que requer o desenvolvimento de várias áreas. Nós desenvolvemos o modelo mecânico, os sistemas eletrônicos e de comunicação e a inteligência artifical dos robôs. Um jogo de SSL ocorre entre duas equipes de seis robôs cada. Os robôs tem dimensões limitadas, o robô deve caber dentro de um círculo de 180 mm de diâmetro e não deve ter mais de 15 cm. Todos os objetos no campo são identificados e normalizados pelos sistema de visão que processa os dados proveniente pelas 4 cameras.</p>
                 </CategoriaContainer>
                 <CategoriaImg BackgroundImg={CategoriaSSL.src}></CategoriaImg>

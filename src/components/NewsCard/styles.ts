@@ -45,4 +45,18 @@ export const Button = styled.button`
     background: #469C57;
     border-radius: 20px;
     padding: 10px 30px;
+
+    transition: background-color 0.2s linear;
+
+    :hover{
+        background-color: #fff;
+        color: #469C57;
+        border: #469C57 1px solid;
+    }
+
+    :focus{
+        background-color: #fff;
+        color: #469C57;
+        border: #469C57 1px solid;
+    }
 `;
